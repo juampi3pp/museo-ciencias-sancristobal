@@ -1,105 +1,132 @@
-Trabajo Práctico Final - Museo de Ciencias Naturales (San Cristóbal)
+Registro de Interacciones y Documentación Técnica de Prompts
 
-Proyecto web interactivo desarrollado como Trabajo Práctico Final Integrador para la materia Tecnología de la Información.
+Proyecto: Landing Page del Museo de Ciencias Naturales de San Cristóbal
 
-🌐 Enlaces del Proyecto
-
-Sitio web desplegado en Netlify: https://sunny-faun-d52d4e.netlify.app
-
-Repositorio oficial en GitHub: https://github.com/juampi3pp/museo-ciencias-sancristobal
-
-📌 Descripción del Sitio
-
-El presente proyecto consiste en una Landing Page institucional, académica y educativa diseñada para el Museo de Ciencias Naturales del Departamento San Cristóbal (fundado el 24 de mayo de 1985 en San Cristóbal, Santa Fe).
-
-El sitio busca revalorizar el patrimonio natural, paleontológico y cultural de la región mediante una experiencia de navegación moderna, interactiva y accesible. Cuenta con galerías dinámicas desplegables tipo Louvre para las colecciones (Arqueología, Paleontología/Megafauna, Avifauna autóctona, Mamíferos & Reptiles, Conservación Húmeda e Insectos), integración con la Radio Comunitaria Científica, reproductor de audio, sección de Ubicación en dos columnas con Google Maps interactivo, Preguntas Frecuentes (FAQ) y formulario de contacto/reservas.
-
-🎯 Objetivo
-
-El objetivo principal es promover la difusión cultural e histórica del museo, facilitando a delegaciones escolares, investigadores y al público general la reserva previa de visitas guiadas gratuitas. En el aspecto técnico, el proyecto integra buenas prácticas de maquetación semántica, diseño responsivo, personalización con variables CSS, accesibilidad y dinamismo a través de JavaScript nativo para la conmutación de Modo Oscuro.
-
-🧩 Secciones del Sitio (Landing Page)
-
-La página está estructurada semánticamente en las siguientes secciones principales:
-
-Inicio (#inicio): Encabezado principal (Hero Section) con presentación institucional, distintivo histórico y botones de llamada a la acción (CTA).
-
-Exposiciones & Colecciones (#exposiciones): Galería interactiva desplegable tipo Louvre con tarjetas expandibles para las 6 áreas temáticas del museo.
-
-Radio & Redes (#radio): Sección multimedia con reproductor de audio en vivo para la Radio Comunitaria Científica y accesos a perfiles oficiales.
-
-Información General & FAQ (#informacion / #faq): Tarjetas informativas de horarios/reservas y un acordeón interactivo de Preguntas Frecuentes resuelto de forma nativa.
-
-Ubicación & Contacto (#ubicacion / #contacto): Diseño de doble columna con tarjeta de accesibilidad, mapa interactivo de Google Maps enfocado en la esquina de H. Irigoyen y Dr. G. Lassaga, y el formulario de reservas.
-
-🛠️ Tecnologías Utilizadas
-
-HTML5
-
-Estructura semántica estricta (<header>, <nav>, <main>, <section>, <article>, <details>, <summary>, <footer>).
-
-Uso de atributos de accesibilidad y SEO Open Graph.
-
-CSS3
-
-Variables CSS (:root): Gestión centralizada de paleta de colores, fuentes, sombras y transiciones.
-
-Layout Moderno: Maquetación combinada con Flexbox para componentes de navegación/formularios y CSS Grid para la galería expandible y el mapa.
-
-Animaciones y Transiciones: Efectos suaves en botones, tarjetas expandibles, transiciones de color y microinteracciones en menús desplegables.
-
-JavaScript (JS)
-
-Implementación de Modo Oscuro / Claro con conmutación dinámica de clases CSS y persistencia de estado.
-
-Lógica para la navegación interactiva y el menú desplegable (dropdown).
-
-Fuentes e Íconos
-
-Google Fonts: Fuentes tipográficas Cinzel (encabezados de estilo académico) y Plus Jakarta Sans (cuerpo de texto claro y legible).
-
-Font Awesome: Iconografía vectorial para mejorar la experiencia visual de usuario.
-
-📱 Diseño Responsivo
-
-El sitio cuenta con un diseño adapttativo (Responsive Design) desarrollado con Media Queries:
-
-Vista Desktop / Laptop: Menú desplegable flotante, tarjetas de colecciones expandibles horizontalmente y grillas de múltiples columnas.
-
-Vista Mobile / Tablet: Adaptación automática a diseño en una sola columna, menús ajustados para pantallas táctiles y mapas responsivos.
-
-📁 Estructura del Proyecto
-
-museo-ciencias-sancristobal/
-├── imagenes/
-│   ├── aguara.jpg
-│   ├── cardenal.jpg
-│   ├── insectos.jpg
-│   ├── mastodonte.jpg
-│   ├── muesra_frascos.jpg
-│   └── vasijas.jpg
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
-
-🎓 Información Institucional & Autor
-
-Institución: Escuela Normal Superior N° 40 "Mariano Moreno"
-
-Carrera: Tecnicatura Superior en Desarrollo de Software (1.er Año)
-
-Materia: Tecnología de la Información
+Materia: Tecnología de la Información | Tecnicatura Superior en Desarrollo de Software (1.er Año)
 
 Alumno: Juan Pablo Moyano
 
-📬 Contacto del Museo
+Institución: Escuela Normal Superior N° 40 "Mariano Moreno"
 
-Dirección: H. Irigoyen y Dr. Gerónimo Lassaga, San Cristóbal (CP 3070), Santa Fe, Argentina.
+📌 Introducción y Metodología de Trabajo
 
-Correo Electrónico: museociencia@yahoo.com.ar
+El desarrollo del proyecto fue dirigido y maquetado por el alumno, utilizando datos institucionales reales del Museo de Ciencias Naturales de San Cristóbal (ubicación, colecciones, historia y radio comunitaria).
 
-Teléfono: +54 03408 15-57-7548
+La Inteligencia Artificial se utilizó de forma estratégica como herramienta de soporte técnico para la resolución de patrones visuales específicos, optimizaciones de diseño responsivo, personalización de íconos temáticos y para el desarrollo del script de Modo Oscuro en JavaScript (requerimiento adicional para la promoción de la materia).
 
-Proyecto desarrollado con fines educativos para la promoción directa de la materia Tecnología de la Información (Año 2026).
+🛠️ Detalle de Tareas, Requerimientos y Soluciones Técnicas
+
+Tarea 1: Generación e Iconografía del Cardenal Amarillo
+
+Requerimiento: A partir del logo del museo que representa un cardenal amarillo, se requirió asistencia para definir e integrar una representación gráfica minimalista que funcione como ícono identificatorio del sitio.
+
+Solución Técnica: Implementación de un contenedor de ícono estilizado con clases CSS y estilos alineados a la paleta institucional (var(--primary)).
+
+<!-- Estructura de ícono temático para avifauna -->
+<div class="info-icon">
+    <i class="fa-solid fa-feather-pointed"></i>
+</div>
+
+
+.info-icon {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+
+Tarea 2: Integración Multimedia de la Radio Comunitaria
+
+Requerimiento: Estructurar un módulo interactivo para la Radio Comunitaria Científica del museo, incorporando un reproductor de audio nativo con diseño adaptado a la estética general.
+
+Solución Técnica: Maquetado del componente con la etiqueta semántica <audio> estilizada mediante CSS.
+
+<div class="radio-card">
+    <div class="radio-icon"><i class="fa-solid fa-radio"></i></div>
+    <h3>Radio Comunitaria Científica</h3>
+    <p>Emisión en vivo de contenido educativo y divulgación científica.</p>
+    <audio controls class="audio-player">
+        <source src="audio/transmision-demo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+    </audio>
+</div>
+
+
+Tarea 3: Animaciones de Despliegue para Colecciones (Estilo Louvre)
+
+Requerimiento: Diseñar una galería interactiva para las 6 exposiciones del museo que responda con efectos de animación al pasar el cursor o interactuar en pantallas táctiles.
+
+Solución Técnica: Uso de CSS Grid y transiciones sobre las tarjetas (transform y box-shadow) para generar el efecto de elevación y despliegue.
+
+.collection-card {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.collection-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+Tarea 4: Grilla Responsiva para Mapa y Ubicación
+
+Requerimiento: Integrar la ubicación oficial (H. Irigoyen y Dr. G. Lassaga) combinando la información de accesibilidad y el iframe del mapa interactivo de Google Maps en un diseño adaptativo de dos columnas.
+
+Solución Técnica: Definición de una grilla en dos columnas con ajuste automático a una sola columna mediante media queries para dispositivos móviles.
+
+<section id="ubicacion" class="section bg-light">
+    <div class="container">
+        <div class="location-grid">
+            <div class="location-info">
+                <h3>Ubicación y Entorno</h3>
+                <p>H. Irigoyen y Dr. Gerónimo Lassaga, San Cristóbal, Santa Fe.</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+Tarea 5: Punto Extra - Rutina en JavaScript para Modo Oscuro
+
+Requerimiento: Desarrollar la lógica en JavaScript para la conmutación de temas (Modo Claro / Modo Oscuro) con guardado del estado en localStorage.
+
+Solución Técnica: Escuchador de eventos (click) que alterna la clase dark-mode en el cuerpo del documento y almacena la preferencia.
+
+const themeToggle = document.getElementById('themeToggle');
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
+// Carga inicial según preferencia guardada
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+
+
+🎯 Conclusión
+
+El registro demuestra la utilización de la IA como un asistente técnico eficiente para la resolución de fragmentos de código específicos y la optimización de la experiencia de usuario, manteniendo la autoría y dirección técnica del proyecto por parte del estudiante.
