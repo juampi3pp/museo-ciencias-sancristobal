@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REQUISITO: Favicon con el icono del Cardenal Amarillo -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23E5A823'/><path d='M 30 70 Q 40 45 65 30 Q 80 20 85 15 Q 75 35 60 50 L 70 70 Q 50 65 30 70 Z' fill='%23121212'/><circle cx='68' cy='28' r='2.5' fill='%23FFFFFF'/></svg>">
+
+    <!-- REQUISITO: SEO Meta Tags -->
+    <title>Museo de Ciencias Naturales | San Cristóbal</title>
+    <meta name="description"
+        content="Sitio web oficial del Museo de Ciencias Naturales del Dpto. San Cristóbal. Descubre nuestras exposiciones sobre el Cardenal Amarillo y la biodiversidad regional. Entrada libre y gratuita con reserva.">
+    <meta name="keywords"
+        content="museo, ciencias naturales, Cardenal Amarillo, Gubernatrix cristata, San Cristóbal, exposiciones, patrimonio, biodiversidad, reserva guiada">
+    <meta name="author" content="Museo de Ciencias Naturales">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:title" content="Museo de Ciencias Naturales - Cardenal Amarillo">
+    <meta property="og:description"
+        content="Preservando el tesoro natural de nuestra región. Conoce nuestras muestras y escucha Radio Comunitaria Científica en vivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- REQUISITO: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- REQUISITO: Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BOTÓN TOGGLE MODO OSCURO / CLARO -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- HEADER NAVEGACIÓN SEMÁNTICA -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="3" fill="none" />
+                    <path d="M 30 70 Q 40 45 65 30 Q 80 20 85 15 Q 75 35 60 50 L 70 70 Q 50 65 30 70 Z"
+                        fill="currentColor" />
+                    <path d="M 38 62 Q 48 40 75 25 C 65 35 55 45 48 58 Z" fill="#2c2c2a" />
+                    <circle cx="68" cy="28" r="2.5" fill="#2c2c2a" />
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">MUSEO DE CIENCIAS NATURALES</span>
+                    <span class="logo-subtitle">DEL DPTO SAN CRISTOBAL</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+           <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#exposiciones" class="nav-link">Exposiciones</a></li>
+                    <li><a href="#radio" class="nav-link">Radio & Redes</a></li>
+                    
+                    <!-- Menú desplegable de Información -->
+                    <li class="nav-dropdown">
+                        <a href="#informacion" class="nav-link dropdown-toggle">Información <i class="fa-solid fa-angle-down" style="font-size: 0.75rem; margin-left: 3px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#informacion">Horarios & Reservas</a></li>
+                            <li><a href="#ubicacion">Ubicación y Mapa</a></li>
+                            <li><a href="#faq">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN INICIO / HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg">
+                <!-- Imagen local optimizada -->
+                <img src="imagenes/head.jpg"
+                    alt="Interior del Museo de Ciencias Naturales con el cráneo de Giganotosaurus">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-tag">PATRIMONIO & BIODIVERSIDAD</span>
+                <h1 class="hero-title">Preservando el tesoro natural de nuestra región</h1>
+                <p class="hero-subtitle">Asociación civil sin fines de lucro dedicada a la protección, difusión y conservación de la naturaleza y el ambiente.</p>
+                <div class="hero-actions">
+                    <a href="#exposiciones" class="btn btn-primary">Ver Exposiciones</a>
+                    <a href="#informacion" class="btn btn-outline">Planifica tu Visita</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER IDENTIDAD CORPORATIVA -->
+        <section class="cardenal-feature">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature-badge">
+                        <svg viewBox="0 0 100 100" class="badge-icon" aria-hidden="true">
+                            <path d="M 30 70 Q 40 45 65 30 Q 80 20 85 15 Q 75 35 60 50 L 70 70 Q 50 65 30 70 Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Emblema del Museo: El Cardenal Amarillo</h3>
+                        <p>Institución fundada el 24 de mayo de 1985 en la ciudad de San Cristóbal, Departamento San Cristóbal, Provincia de Santa Fe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- SECCIÓN EXPOSICIONES Y COLECCIONES -->
+<section id="exposiciones" class="section bg-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">SALAS Y SALONES</span>
+      <h2 class="section-title">Colecciones del Museo</h2>
+      <div class="title-divider"></div>
+    </div>
+
+    <!-- Contenedor desplegable tipo Louvre -->
+    <div class="collections-expandable">
+      
+      <!-- 1. Arqueología -->
+      <article class="expand-card">
+        <div class="card-bg-img" style="background-image: url('imagenes/vasija.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <span class="card-category">Historia Regional</span>
+          <h3 class="card-title-exp">Arqueología</h3>
+          <p class="card-details">Herramientas, morteros y vasijas cerámicas pertenecientes a los pueblos originarios que habitaron la región.</p>
+        </div>
+      </article>
+
+      <!-- 2. Megafauna -->
+      <article class="expand-card">
+        <div class="card-bg-img" style="background-image: url('imagenes/tigre.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <span class="card-category">Paleontología</span>
+          <h3 class="card-title-exp">Megafauna</h3>
+          <p class="card-details">Fósiles y restos óseos de mamíferos gigantes del Pleistoceno: Mastodonte, Gliptodonte, Megaterio y Toxodón.</p>
+        </div>
+      </article>
+
+      <!-- 3. Avifauna Nativa -->
+      <article class="expand-card active-default">
+        <div class="card-bg-img" style="background-image: url('imagenes/cardenal.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <span class="card-category">Ornitología</span>
+          <h3 class="card-title-exp">Aves Regionales</h3>
+          <p class="card-details">Ejemplares taxidermizados y presentados en dioramas, destacando la presencia y hábitat del Cardenal Amarillo.</p>
+        </div>
+      </article>
+
+      <!-- 4. Mamíferos y Reptiles -->
+      <article class="expand-card">
+    <div class="card-bg-img" style="background-image: url('imagenes/aguara.jpg');"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <span class="card-category">Zoología</span>
+      <h3 class="card-title-exp">Mamíferos & Reptiles</h3>
+      <p class="card-details">Muestra de especies autóctonas del ecosistema santafesino preservadas mediante taxidermia y dioramas explicativos.</p>
+    </div>
+  </article>
+
+      <!-- 5. Conservación en Líquidos -->
+      <article class="expand-card">
+        <div class="card-bg-img" style="background-image: url('imagenes/serpiente.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <span class="card-category">Biología & Ciencia</span>
+          <h3 class="card-title-exp">Conservación Húmeda</h3>
+          <p class="card-details">Colección didáctica de frascos con fetos de animales y especímenes biológicos conservados en soluciones científicas.</p>
+        </div>
+      </article>
+
+      <!-- 6. Insectos en Resina -->
+      <article class="expand-card">
+        <div class="card-bg-img" style="background-image: url('imagenes/mariposa.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <span class="card-category">Entomología</span>
+          <h3 class="card-title-exp">Insectos en Resina</h3>
+          <p class="card-details">Muestra de artrópodos e insectos nativos e exóticos preservados en bloques transparentes de resina sintética.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+        <!-- SECCIÓN RADIO & REDES SOCIALES -->
+        <section id="radio" class="section section-dark">
+            <div class="container">
+                <div class="radio-wrapper">
+                    <!-- Reproductor de Radio -->
+                    <div class="radio-player-card">
+                        <div class="radio-header">
+                            <span class="live-dot"></span>
+                            <span>RADIO MUSEO EN VIVO</span>
+                        </div>
+                        <h3 class="radio-title">Radio Comunitaria Científica</h3>
+                        <p class="radio-desc">Escucha nuestros programas de divulgación científica, entrevistas con investigadores y las últimas novedades en directo.</p>
+
+                        <!-- REQUISITO: Reproductor de Audio Multimedia Real -->
+                        <audio id="audioStream" src="https://server.esenvivo.com:8000/stream" preload="none"></audio>
+
+                        <div class="custom-audio-player">
+                            <button class="play-btn" id="radioPlayBtn" aria-label="Reproducir transmisión en vivo">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="audio-info">
+                                <span class="track-name">Radio Comunitaria Científica</span>
+                                <span class="track-status" id="trackStatus">Haz clic en Play para escuchar</span>
+                            </div>
+                            <div class="audio-wave">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+
+                        <!-- Enlace a la web de la Radio -->
+                        <div class="radio-external-link">
+                            <a href="https://radiocomunitariacientifica.esenvivo.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar la web oficial de la Radio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- REDES SOCIALES (Reemplazo de noticias estáticas) -->
+                    <div class="news-list">
+                        <h3 class="news-main-title">Redes Sociales & Actualidad</h3>
+                        <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 1.5rem;">Sigue nuestras últimas publicaciones y novedades compartidas en los perfiles oficiales de Facebook e Instagram.</p>
+
+                        <div style="display: grid; gap: 1rem;">
+                            <!-- Publicación Facebook -->
+                            <div style="background: var(--dark-surface); padding: 1.25rem; border: 1px solid rgba(255,255,255,0.08); border-left: 3px solid #1877F2;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: #1877F2; font-size: 0.85rem; font-weight: 600;">
+                                    <i class="fa-brands fa-facebook"></i> <span>Facebook - Museo & Radio</span>
+                                </div>
+                                <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 0.75rem;">¡Nuevos contenidos sobre la conservación del Cardenal Amarillo y transmisiones especiales en vivo!</p>
+                                <a href="https://www.facebook.com/MuseodeCienciasNaturalesdelDptoSanCristobal" target="_blank" rel="noopener" style="color: var(--primary); font-size: 0.85rem; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.3rem;">
+                                    Ver publicación en Facebook <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                            <!-- Publicación Instagram -->
+                            <div style="background: var(--dark-surface); padding: 1.25rem; border: 1px solid rgba(255,255,255,0.08); border-left: 3px solid #E1306C;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: #E1306C; font-size: 0.85rem; font-weight: 600;">
+                                    <i class="fa-brands fa-instagram"></i> <span>Instagram - @museocsnaturales</span>
+                                </div>
+                                <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 0.75rem;">Explora las postales de nuestras muestras paleontológicas y actividades educativas en la región.</p>
+                                <a href="https://www.instagram.com/museocsnaturales?vrfl=MXFvdTJpMXltc2phNw==" target="_blank" rel="noopener" style="color: var(--primary); font-size: 0.85rem; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.3rem;">
+                                    Ver perfil de Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN INFORMACIÓN GENERAL (Tarifa eliminada, enfocada en Reserva y Horarios) -->
+        <section id="informacion" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">GUÍA DE VISITA</span>
+                    <h2 class="section-title">Información Útil</h2>
+                    <div class="title-divider"></div>
+                </div>
+
+                <div class="grid grid-2" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 900px; margin: 0 auto;">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <h3>Horarios & Reservas</h3>
+                        <p><strong>Lunes a Viernes:</strong> 09:00 - 18:00 hs<br>
+                           <strong>Sábados y Domingos:</strong> Cerrado<br><br>
+                           <strong style="color: var(--primary);">¡Entrada Libre y Gratuita!</strong><br>
+                           <em>Requiere reserva previa de fecha y hora para el recorrido guiado.</em></p>
+                    </div>
+
+                  <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-person-walking-arrow-right"></i></div>
+                        <h3>Recomendaciones</h3>
+                        <p><strong>Puntualidad:</strong> Te sugerimos llegar 10 minutos antes de tu reserva.<br>
+                           <strong>Silencio y respeto:</strong> Mantén los dispositivos en modo silencioso.<br>
+                           <em>¡Disfruta y cuida nuestro patrimonio!</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCIÓN PREGUNTAS FRECUENTES (FAQ) -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">RESOLVEMOS TUS DUDAS</span>
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                    <div class="title-divider"></div>
+                </div>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿Se pueden tomar fotografías dentro del museo?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p class="faq-answer">
+                            Sí, se permite la toma de fotografías y videos para uso personal sin el uso de flash ni trípodes, para proteger la preservación de los especímenes y piezas expuestas.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿Cuánto dura el recorrido guiado y cómo es la dinámica?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p class="faq-answer">
+                            El recorrido guiado tiene una duración aproximada de 45 a 60 minutos. Un guía especializado acompaña a los visitantes por las distintas colecciones explicando los detalles de la biodiversidad regional y la paleontología.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿Realizan visitas guiadas para instituciones escolares?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p class="faq-answer">
+                            ¡Sí! Contamos con recorridos educativos adaptados a todos los niveles escolares (inicial, primario y secundario). Se debe reservar con anticipación seleccionando la opción en nuestro formulario de contacto.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>¿La entrada tiene algún costo?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p class="faq-answer">
+                            No, la entrada es completamente libre y gratuita. Solo requerimos la reserva previa de fecha y hora para poder organizar los grupos y brindar una mejor experiencia.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+    <summary class="faq-question">
+        <span>¿Se pueden tocar las piezas o muestras del museo?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </summary>
+    <p class="faq-answer">
+        No, por razones de conservación y seguridad del patrimonio, está estrictamente prohibido tocar los especímenes, fósiles, vitrinas u objetos expuestos. Contamos con muestras didácticas supervisadas durante los recorridos guiados.
+    </p>
+</details>
+                </div>
+            </div>
+        </section>
+
+     <!-- SECCIÓN MAPA Y UBICACIÓN -->
+       <section id="ubicacion" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">CÓMO LLEGAR</span>
+                    <h2 class="section-title">Ubicación y Entorno</h2>
+                    <div class="title-divider"></div>
+                </div>
+
+                <div class="location-grid">
+                    <!-- Columna 1: Tarjeta con detalles prácticos -->
+                    <div class="location-card">
+                        <h3 class="location-title">
+                            <i class="fa-solid fa-building-columns"></i> Museo de Ciencias Naturales
+                        </h3>
+                        <p class="location-address">
+                            <strong>Dirección:</strong> H. Irigoyen y Dr. Gerónimo Lassaga<br>
+                            San Cristóbal (CP 3070), Provincia de Santa Fe, Argentina.
+                        </p>
+
+                        <div class="location-features">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-bus"></i>
+                                <div>
+                                    <strong>Accesibilidad Urbana</strong>
+                                    <p>Ubicación céntrica y de fácil acceso peatonal desde las avenidas principales de la ciudad.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <i class="fa-solid fa-wheelchair"></i>
+                                <div>
+                                    <strong>Infraestructura Inclusiva</strong>
+                                    <p>Entrada accesible adaptada para personas con movilidad reducida y cochecitos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://maps.google.com/?q=H.+Irigoyen+y+Dr.+Geronimo+Lassaga,+San+Cristobal,+Santa+Fe" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="btn btn-primary full-width" 
+                           style="margin-top: 1.5rem; text-align: center;">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+
+                    <!-- Columna 2: Mapa interactivo ampliado -->
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13777.769865770006!2d-61.2377064!3d-30.3099299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944a79585bd6dca7%3A0xa76fc732e0a53ae7!2sMuseo%20de%20Ciencias%20Naturales%20del%20Dpto%20San%20Crist%C3%B3bal!5e0!3m2!1ses!2sar!4v1792789942544!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></src=>
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 380px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO Y FORMULARIO -->
+        <section id="contacto" class="section bg-light">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <span class="section-subtitle">ESTAMOS PARA AYUDARTE</span>
+                        <h2 class="section-title">Ponte en Contacto</h2>
+                        <p>Reserva tu fecha y hora para el recorrido guiado, o consúltanos sobre eventos especiales y visitas escolares. Escríbenos y responderemos a la brevedad.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong>Correo Electrónico</strong>
+                                    <p>museociencia@yahoo.com.ar</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Teléfono Directo</strong>
+                                    <p>+54 03408 15-57-7548</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REQUISITO: Formulario de contacto procesable -->
+                    <div class="form-card">
+                        <h3 class="form-title">Reserva / Mensaje</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Ej. Ana Martínez"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto">Asunto / Motivo de consulta</label>
+                                <select id="asunto" class="form-control" required>
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="visita">Reserva de fecha y hora (Visita guiada)</option>
+                                    <option value="prensa">Prensa y Comunicación</option>
+                                    <option value="donacion">Donaciones y Patrocinios</option>
+                                    <option value="otro">Otras consultas</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje (Indica fecha y hora preferida)</label>
+                                <textarea id="mensaje" class="form-control" rows="4"
+                                    placeholder="Escribe tu consulta o reserva aquí..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary full-width">Enviar Solicitud</button>
+                        </form>
+                        <div id="formFeedback" class="form-feedback"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SEMÁNTICO -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="3" fill="none" />
+                            <path d="M 30 70 Q 40 45 65 30 Q 80 20 85 15 Q 75 35 60 50 L 70 70 Q 50 65 30 70 Z"
+                                fill="currentColor" />
+                        </svg>
+                        <span>MUSEO HISTORIA NATURAL</span>
+                    </div>
+                    <h4 class="footer-heading">Acerca del Museo</h4>
+                    <p class="footer-text">Dedicados al estudio, conservación y divulgación del patrimonio natural de la región, enfocados en la protección de especies amenazadas como el Cardenal Amarillo.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#exposiciones">Exposiciones</a></li>
+                        <li><a href="#radio">Radio & Redes</a></li>
+                        <li><a href="#informacion">Información</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Síguenos</h4>
+                    <div class="social-links">
+                        <a target="_blank" rel="noopener"
+                            href="https://www.facebook.com/MuseodeCienciasNaturalesdelDptoSanCristobal"
+                            aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" rel="noopener"
+                            href="https://www.instagram.com/museocsnaturales?vrfl=MXFvdTJpMXltc2phNw=="
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" rel="noopener" href="#" aria-label="YouTube"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                    <div class="support-box">
+                        <h5 class="support-title"><i class="fa-solid fa-headset"></i> Soporte Técnico</h5>
+                        <p class="support-text">¿Problemas con el sitio o la transmisión en vivo de la radio?</p>
+                        <a href="mailto:moyanojuampi@gmail.com" class="support-link">moyanojuampi@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Museo de Ciencias Naturales. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Términos de uso</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Accesibilidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS: Modo Oscuro, Radio y Formulario -->
+    <script>
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Menú Hamburguesa para vista móvil
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Rutina de Modo Oscuro / Claro con LocalStorage
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeIcon.className = 'fa-solid fa-sun';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+
+            themeIcon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        // Control del Reproductor de Radio Streaming
+        const radioBtn = document.getElementById('radioPlayBtn');
+        const audioStream = document.getElementById('audioStream');
+        const trackStatus = document.getElementById('trackStatus');
+        let isPlaying = false;
+
+        radioBtn.addEventListener('click', () => {
+            const icon = radioBtn.querySelector('i');
+
+            if (!isPlaying) {
+                trackStatus.textContent = 'Conectando al servidor...';
+                audioStream.play().then(() => {
+                    isPlaying = true;
+                    icon.className = 'fa-solid fa-pause';
+                    radioBtn.style.backgroundColor = '#d4af37';
+                    trackStatus.textContent = 'Transmitiendo en vivo...';
+                }).catch(err => {
+                    console.error("Error al reproducir audio:", err);
+                    isPlaying = false;
+                    icon.className = 'fa-solid fa-play';
+                    radioBtn.style.backgroundColor = 'var(--primary)';
+                    trackStatus.textContent = 'Transmisión offline / Bloqueada';
+                    alert('Nota técnica: Usa el enlace de abajo para escuchar directo en la web de la radio.');
+                });
+            } else {
+                audioStream.pause();
+                isPlaying = false;
+                icon.className = 'fa-solid fa-play';
+                radioBtn.style.backgroundColor = 'var(--primary)';
+                trackStatus.textContent = 'Transmisión pausada';
+            }
+        });
+
+        // Captura y Procesamiento de Datos del Formulario
+        const contactForm = document.getElementById('contactForm');
+        const formFeedback = document.getElementById('formFeedback');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                email: document.getElementById('email').value,
+                asunto: document.getElementById('asunto').value,
+                mensaje: document.getElementById('mensaje').value,
+                fecha: new Date().toISOString()
+            };
+
+            console.log('Datos de reserva/contacto recibidos:', formData);
+
+            formFeedback.style.display = 'block';
+            formFeedback.className = 'form-feedback success';
+            formFeedback.textContent = `¡Gracias, ${formData.nombre}! Solicitud de reserva recibida. Te confirmaremos a ${formData.email}.`;
+
+            contactForm.reset();
+
+            setTimeout(() => {
+                formFeedback.style.display = 'none';
+            }, 6000);
+        });
+    </script>
+</body>
+
+</html>
